@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blogr is a modern publishing platform. Grow your audience and build your online brand with our extensible editor and robust content management."
+    />
+    <meta name="theme-color" content="#ff525d" />
+
+    <title>Blogr — A modern publishing platform</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+    <!-- Preconnect + Google Fonts (Overpass + Ubuntu) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Skip link for keyboard / screen-reader users -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ============================= HEADER / HERO ============================= -->
+    <header class="hero" id="top">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+          <a href="#top" class="nav__logo" aria-label="Blogr home">
+            <img src="images/logo.svg" alt="Blogr" width="100" height="40" />
+          </a>
+
+          <!-- Mobile menu toggle -->
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            aria-expanded="false"
+            aria-controls="navMenu"
+            aria-label="Open menu"
+          >
+            <img
+              src="images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+              class="nav__toggle-open"
+            />
+            <img
+              src="images/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+              class="nav__toggle-close"
+            />
+          </button>
+
+          <!-- Collapsible menu (links + auth) -->
+          <div class="nav__menu" id="navMenu">
+            <ul class="nav__links">
+              <li class="nav__item">
+                <button
+                  class="nav__dropdown-btn"
+                  aria-expanded="false"
+                  aria-controls="dd-product"
+                >
+                  Product
+                  <img
+                    src="images/icon-arrow-light.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="nav__arrow"
+                  />
+                </button>
+                <ul class="nav__dropdown" id="dd-product">
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Integrations</a></li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <button
+                  class="nav__dropdown-btn"
+                  aria-expanded="false"
+                  aria-controls="dd-company"
+                >
+                  Company
+                  <img
+                    src="images/icon-arrow-light.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="nav__arrow"
+                  />
+                </button>
+                <ul class="nav__dropdown" id="dd-company">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <button
+                  class="nav__dropdown-btn"
+                  aria-expanded="false"
+                  aria-controls="dd-connect"
+                >
+                  Connect
+                  <img
+                    src="images/icon-arrow-light.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="nav__arrow"
+                  />
+                </button>
+                <ul class="nav__dropdown" id="dd-connect">
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="nav__auth">
+              <a href="#" class="btn btn--text">Login</a>
+              <a href="#" class="btn btn--light">Sign Up</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hero copy -->
+        <div class="hero__content">
+          <h1 class="hero__title">A modern publishing platform</h1>
+          <p class="hero__subtitle">
+            Grow your audience and build your online brand
+          </p>
+          <div class="hero__actions">
+            <a href="#" class="btn btn--light">Start for Free</a>
+            <a href="#" class="btn btn--ghost">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ===================== SECTION: DESIGNED FOR THE FUTURE ===================== -->
+      <section class="section feature" aria-labelledby="future-heading">
+        <h2 class="section__title" id="future-heading">
+          Designed for the future
+        </h2>
+
+        <div class="container feature__grid">
+          <div class="feature__text">
+            <article class="feature__item">
+              <h3>Introducing an extensible editor</h3>
+              <p>
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows you to manage them with
+                ease. Flexible content management enables flexible
+                categorization and tagging of blogs, as well as scheduled
+                releases.
+              </p>
+            </article>
+
+            <article class="feature__item">
+              <h3>Robust content management</h3>
+              <p>
+                Flexible content management enables flexible categorization and
+                tagging of blogs, as well as scheduled releases. Edit and manage
+                your content however and wherever you want.
+              </p>
+            </article>
+          </div>
+
+          <div class="feature__media">
+            <img
+              src="images/illustration-editor.svg"
+              alt="Illustration of the Blogr code editor"
+              width="650"
+              height="600"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SECTION: INFRASTRUCTURE (CTA banner) ===================== -->
+      <section class="cta" aria-labelledby="infra-heading">
+        <div class="container cta__grid">
+          <div class="cta__media">
+            <img
+              src="images/illustration-phones.svg"
+              alt="Illustration of two phones running Blogr"
+              width="560"
+              height="600"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="cta__text">
+            <h2 id="infra-heading">State of the Art Infrastructure</h2>
+            <p>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SECTION: FREE, OPEN, SIMPLE ===================== -->
+      <section
+        class="section feature feature--reverse"
+        aria-labelledby="open-heading"
+      >
+        <div class="container feature__grid">
+          <div class="feature__media feature__media--left">
+            <img
+              src="images/illustration-laptop.svg"
+              alt="Illustration of Blogr running on a laptop"
+              width="650"
+              height="600"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="feature__text">
+            <article class="feature__item" id="open-heading">
+              <h3>Free, open, simple</h3>
+              <p>
+                Blogr is a free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code syntax highlighting, RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and is sure to help you
+                succeed.
+              </p>
+            </article>
+
+            <article class="feature__item">
+              <h3>Powerful tooling</h3>
+              <p>
+                Batteries included. We built a simple and straightforward CLI
+                tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================= FOOTER ============================= -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a href="#top" aria-label="Blogr home">
+            <img src="images/logo.svg" alt="Blogr" width="100" height="40" />
+          </a>
+        </div>
+
+        <nav class="footer__col" aria-label="Product">
+          <h2 class="footer__heading">Product</h2>
+          <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Company">
+          <h2 class="footer__heading">Company</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Connect">
+          <h2 class="footer__heading">Connect</h2>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Mustapha Lukman</a>.
+      </p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
